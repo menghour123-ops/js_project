@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+
+<body>
+
+  <div class='bigcontainer'>
+
+    <div class='header'>
+      <h1 id='headerTitle'>KoKo Library</h1>
+      <div class='topButtons'>
+        <button type="button" id='newBook'>New_Book</button>
+        <button id="closeForm">Close_Book</button>
+        <button type='button' id='resetBooks'>Reset_Book</button>
+        <div class="form-popup" id="myForm">
+          <form name="fillForm" class="form-container"> 
+            <h1>New Book</h1>
+        
+            <label for="title"><b>Title_Book</b></label>
+            <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
+        
+            <label for="author"><b>Author_Book</b></label>
+            <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
+        
+            <label for="pages"><b>ID_Books</b></label>
+            <input id='formPages' type="number" placeholder="Enter ID of book" name="pages" required>
+
+            <label for="isRead">Read?</label>
+            <input type="radio" name='formRead' id='formIsRead' class="popup_radio" value="Read" required>Read
+            <input type="radio" name='formRead' id='formNotRead' class="popup_radio" value="Not Read">Not Read
+            <button id='formSubmit' class="btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+      <div class="card">
+        <h1>Name Of Book</h1>
+        <h2>Author</h2>
+        <p>ID</p>
+        <p>Radio</p>
+        <button class="btn">Remove</button>
+      </div>
+
+  </div>
+ 
+
+  <script src="js/app.js" ></script>
+
+</body>
+</html>
